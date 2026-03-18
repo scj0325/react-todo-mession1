@@ -24,11 +24,11 @@ export function useContext() {
     const filterTodos = todos.filter((ab, cb) => ab.id != sindex);
     setTodos(filterTodos);
   };
-  const ToggleE = (ina) => {
+  const ToggleE = (inda) => {
     //const filterToggle = todos.filter((ab, cd) => isBigEnough(ab.id, ina, ab));
     const filterToggle = todos.filter(
       (ab, cd) =>
-        (ab.id == ina
+        (ab.id == inda
           ? (ab.checked = !ab.checked)
           : (ab.checked = ab.checked)) || true,
     );
